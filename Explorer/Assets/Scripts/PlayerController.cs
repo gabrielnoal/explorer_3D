@@ -26,6 +26,14 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
+        //Tratando movimentação do mouse
+        float mouse_dX = Input.GetAxis("Mouse X");
+        float mouse_dY = Input.GetAxis("Mouse Y");
+
+        //Tratando a rotação da câmera
+        cameraRotation += mouse_dY;
+        Mathf.Clamp(cameraRotation, -75.0f, 75.0f);
+
         //Verificando se é preciso aplicar a gravidade
         float y = 0;
         if (!characterController.isGrounded)
@@ -36,24 +44,6 @@ public class PlayerController : MonoBehaviour
         Vector3 direction = transform.right * x + transform.up * y + transform.forward * z;
 
         characterController.Move(direction * _baseSpeed * Time.deltaTime);
-    }
-
-    void RotatePlayer()
-    {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-
-        //Tratando movimentação do mouse
-        float mouse_dX = Input.GetAxis("Mouse X");
-        float mouse_dY = Input.GetAxis("Mouse Y");
-
-        //Tratando a rotação da câmera
-        cameraRotation += mouse_dY;
-        Mathf.Clamp(cameraRotation, -75.0f, 75.0f);
-
-        Vector3 direction = new Vector3(x, 0, z);
-
-        characterController.Move(direction * _baseSpeed * Time.deltaTime);
         transform.Rotate(Vector3.up, mouse_dX);
 
         playerCamera.transform.localRotation = Quaternion.Euler(cameraRotation, 0.0f, 0.0f);
@@ -62,6 +52,5 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer();
-        RotatePlayer();
     }
 }
