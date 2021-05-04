@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         float mouse_dY = Input.GetAxis("Mouse Y");
 
         //Tratando a rotação da câmera
-        cameraRotation += mouse_dY;
+        cameraRotation -= mouse_dY;
         Mathf.Clamp(cameraRotation, -75.0f, 75.0f);
 
         //Verificando se é preciso aplicar a gravidade
