@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    float _baseSpeed = 10.0f;
+    public float _baseSpeed = 10.0f;
     float _gravidade = 9.8f;
 
     //Referência usada para a câmera filha do jogador
@@ -52,5 +52,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer();
+    }
+
+
+    void LateUpdate()
+
+    {
+        RaycastHit hit;
+        Debug.DrawRay(playerCamera.transform.position, transform.forward * 10.0f, Color.magenta);
+        if (Physics.Raycast(playerCamera.transform.position, transform.forward, out hit, 100.0f))
+        {
+            Debug.Log(hit.collider.name);
+        }
     }
 }
