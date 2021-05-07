@@ -7,11 +7,11 @@ public class MazeRenderer : MonoBehaviour
 
     [SerializeField]
     [Range(1, 50)]
-    private int width = 10;
+    private int width = 1;
 
     [SerializeField]
     [Range(1, 50)]
-    private int height = 10;
+    private int height = 1;
 
     [SerializeField]
     private float size = 1f;
@@ -80,12 +80,6 @@ public class MazeRenderer : MonoBehaviour
             }
 
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }
