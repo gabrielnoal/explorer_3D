@@ -5,7 +5,8 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     public Animation openChestAnimation;
-    public Component hinge;
+    public Animation keyAnimation;
+    public Component key;
 
     private bool opened;
     void Start()
@@ -13,11 +14,17 @@ public class Chest : MonoBehaviour
         opened = false;
     }
 
+    IEnumerator WaitChestOpen(){
+        yield return new WaitForSeconds(1.5f);
+        key.GetComponent<BoxCollider>().enabled = true;
+    }
+
     private void OnTriggerStay(Collider other) {
         if (opened == false && Input.GetKey(KeyCode.E))
         {
-            hinge.GetComponent<BoxCollider>().enabled = true;
             openChestAnimation.Play();
+            keyAnimation.Play();
+            StartCoroutine(WaitChestOpen());
             opened = true;
         }
     }
