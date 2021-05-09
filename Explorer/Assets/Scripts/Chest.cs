@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Chest : MonoBehaviour
 {
     public Animation openChestAnimation;
     public Animation keyAnimation;
     public Component key;
+    public Text legend;
 
     private bool opened;
+    private bool setText = true;
     void Start()
     {
         opened = false;
@@ -20,12 +23,30 @@ public class Chest : MonoBehaviour
     }
 
     private void OnTriggerStay(Collider other) {
-        if (opened == false && Input.GetKey(KeyCode.E))
+        if (!opened && setText)
         {
+            legend.text = "Press E to OPEN the CHEST";
+            setText = false;
+        }
+        if (!opened && Input.GetKey(KeyCode.E))
+        {
+            ClearText();
             openChestAnimation.Play();
             keyAnimation.Play();
             StartCoroutine(WaitChestOpen());
             opened = true;
         }
+    }
+
+    void ClearText(){
+        if (!setText)
+        {
+            legend.text = "";
+            setText = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        ClearText();
     }
 }
