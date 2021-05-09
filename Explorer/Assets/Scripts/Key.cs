@@ -10,6 +10,13 @@ public class Key : MonoBehaviour
     public Text legend;
     private bool setText = true;
 
+    private bool gotKey = false;
+
+    IEnumerator WaitSoundPlay()
+    {
+        yield return new WaitForSeconds(1.0f);
+        gameObject.SetActive(false);
+    }
 
     void UnlockDoor()
     {
@@ -18,16 +25,18 @@ public class Key : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (setText)
+        if (setText && gotKey == false)
         {
             legend.text = "Press E to GET the KEY";
             setText = false;
         }
         if (Input.GetKey(KeyCode.E))
         {
+            gotKey = true;
+            GetComponent<AudioSource>().Play();
             UnlockDoor();
             ClearText();
-            gameObject.SetActive(false);
+            StartCoroutine(WaitSoundPlay());
         }
     }
 
