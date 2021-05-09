@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(playerCamera.transform.position, transform.forward * 10.0f, Color.magenta);
         if (Physics.Raycast(playerCamera.transform.position, transform.forward, out hit, 100.0f))
         {
-            Debug.Log(hit.collider.name);
+            //Debug.Log(hit.collider.name);
         }
     }
 }
