@@ -33,6 +33,7 @@ public class Chest : MonoBehaviour
         if (!opened && Input.GetKey(KeyCode.E))
         {
             ClearText();
+            GetComponent<AudioSource>().Play();
             openChestAnimation.Play();
             keyAnimation.Play();
             StartCoroutine(WaitChestOpen());
