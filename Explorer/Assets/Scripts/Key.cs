@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
-    
+
     public Component Door;
     public Text legend;
     private bool setText = true;
 
 
-    void UnlockDoor(){
+    void UnlockDoor()
+    {
         Door.GetComponent<OpenDoor>().UnlockDoor();
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerStay(Collider other)
+    {
         if (setText)
         {
             legend.text = "Press E to GET the KEY";
@@ -29,7 +31,8 @@ public class Key : MonoBehaviour
         }
     }
 
-    void ClearText(){
+    void ClearText()
+    {
         if (!setText)
         {
             legend.text = "";
@@ -37,7 +40,8 @@ public class Key : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other) {
+    private void OnTriggerExit(Collider other)
+    {
         ClearText();
     }
 }

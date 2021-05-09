@@ -29,7 +29,7 @@ public class OpenDoor : MonoBehaviour
         {
             legend.text = isLocked ? "Door is locked, find key to open" : "Press E to OPEN the DOOR";
             setText = false;
-            
+
         }
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {

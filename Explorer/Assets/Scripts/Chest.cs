@@ -17,12 +17,14 @@ public class Chest : MonoBehaviour
         opened = false;
     }
 
-    IEnumerator WaitChestOpen(){
+    IEnumerator WaitChestOpen()
+    {
         yield return new WaitForSeconds(1.5f);
         key.GetComponent<BoxCollider>().enabled = true;
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerStay(Collider other)
+    {
         if (!opened && setText)
         {
             legend.text = "Press E to OPEN the CHEST";
@@ -38,7 +40,8 @@ public class Chest : MonoBehaviour
         }
     }
 
-    void ClearText(){
+    void ClearText()
+    {
         if (!setText)
         {
             legend.text = "";
@@ -46,7 +49,8 @@ public class Chest : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other) {
+    private void OnTriggerExit(Collider other)
+    {
         ClearText();
     }
 }
