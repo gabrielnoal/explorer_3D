@@ -23,11 +23,12 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
-        Debug.Log(Cursor.visible);
     }
 
     public void Resume()
     {
+        GetComponent<AudioSource>().Play();
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
@@ -37,6 +38,8 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        GetComponent<AudioSource>().Play();
+
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);
@@ -46,6 +49,8 @@ public class PauseMenu : MonoBehaviour
 
     public void goToMenu()
     {
+        GetComponent<AudioSource>().Play();
+
         SceneManager.LoadScene("StartGame");
     }
 }

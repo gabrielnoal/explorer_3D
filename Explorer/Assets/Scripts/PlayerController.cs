@@ -58,11 +58,11 @@ public class PlayerController : MonoBehaviour
     void LateUpdate()
 
     {
-        RaycastHit hit;
-        Debug.DrawRay(playerCamera.transform.position, transform.forward * 10.0f, Color.magenta);
-        if (Physics.Raycast(playerCamera.transform.position, transform.forward, out hit, 100.0f))
-        {
-            //Debug.Log(hit.collider.name);
-        }
+        // RaycastHit hit;
+        // Debug.DrawRay(playerCamera.transform.position, transform.forward * 10.0f, Color.magenta);
+        // if (Physics.Raycast(playerCamera.transform.position, transform.forward, out hit, 100.0f))
+        // {
+        //     //Debug.Log(hit.collider.name);
+        // }
     }
 }

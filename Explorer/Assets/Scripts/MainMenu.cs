@@ -5,14 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public GameObject optionsMenu;
+    public GameObject mainMenu;
+
     public void PlayGame()
     {
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("MazeScene");
     }
 
-    public void PlayTutorial()
+    public void ShowOptions()
     {
-        SceneManager.LoadScene("TutorialScene");
+        GetComponent<AudioSource>().Play();
+        optionsMenu.SetActive(true);
+        mainMenu.SetActive(false);
+    }
+
+    public void ShowMainMenu()
+    {
+        GetComponent<AudioSource>().Play();
+        mainMenu.SetActive(true);
+        optionsMenu.SetActive(false);
     }
 
 }

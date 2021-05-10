@@ -10,6 +10,9 @@ public class OpenDoor : MonoBehaviour
     public Animation openDoorAnimation;
     public Text legend;
 
+    public AudioClip openSound;
+    public AudioClip lockedSound;
+
     private bool setText = true;
     public bool isLocked = true;
 
@@ -31,8 +34,15 @@ public class OpenDoor : MonoBehaviour
             setText = false;
 
         }
+        if (isClosed && isLocked && Input.GetKey(KeyCode.E))
+        {
+            GetComponent<AudioSource>().clip = lockedSound;
+            GetComponent<AudioSource>().Play();
+        }
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
+            GetComponent<AudioSource>().clip = openSound;
+            GetComponent<AudioSource>().Play();
             openDoorAnimation.Play();
             StartCoroutine(OpenDoorRoutine());
             isClosed = false;
