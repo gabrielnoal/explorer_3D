@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class OpenDoor : MonoBehaviour
 {
@@ -15,6 +17,11 @@ public class OpenDoor : MonoBehaviour
 
     private bool setText = true;
     public bool isLocked = true;
+
+    public bool isFirstDoor = false;
+
+    public bool isLastDoor = false;
+    public GameObject countdown;
 
     private bool isClosed = true;
 
@@ -41,11 +48,20 @@ public class OpenDoor : MonoBehaviour
         }
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
+
             GetComponent<AudioSource>().clip = openSound;
             GetComponent<AudioSource>().Play();
             openDoorAnimation.Play();
             StartCoroutine(OpenDoorRoutine());
             isClosed = false;
+            if (isFirstDoor)
+            {
+                countdown.SetActive(true);
+            }
+            if (isLastDoor)
+            {
+                SceneManager.LoadScene("WinScene");
+            }
         }
     }
 
