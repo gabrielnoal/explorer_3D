@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartGame.unity
     guid: 3791a6456f794b6429df3b286cf941f1
   - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 6e2c8f2b56cc295449bd3faa86a14890
+    path: Assets/Scenes/WinScene.unity
+    guid: 66e12f77555c38a4f80d4581ae9a39c8
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: f677e43c377d0944299a258845002bb3
   m_configObjects: {}
