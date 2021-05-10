@@ -50,7 +50,8 @@ public class PauseMenu : MonoBehaviour
     public void goToMenu()
     {
         GetComponent<AudioSource>().Play();
-
+        Time.timeScale = 1f;
+        GameIsPaused = false;
         SceneManager.LoadScene("StartGame");
     }
 }

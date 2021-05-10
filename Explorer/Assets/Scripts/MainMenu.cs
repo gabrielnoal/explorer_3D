@@ -29,4 +29,10 @@ public class MainMenu : MonoBehaviour
         optionsMenu.SetActive(false);
     }
 
+    public void GoToMenu()
+    {
+        GetComponent<AudioSource>().Play();
+        SceneManager.LoadScene("StartGame");
+    }
+
 }
