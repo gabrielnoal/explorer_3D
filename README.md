@@ -10,7 +10,7 @@ Access [Brackeys Youtube Channel](https://www.youtube.com/channel/UCYbK_tjZ2OrIZ
 
 ## Models:
 
-- [Flash Ligth](https://opengameart.org/content/torch)
+- [Flash Light](https://opengameart.org/content/torch)
 - [Key](https://www.turbosquid.com/3d-models/old-key-3ds/448201)
 - [Chest](https://www.turbosquid.com/3d-models/chest-3d-model-1290627)
 - [Doors](https://opengameart.org/content/modular-dungeon-2-3d-models)
