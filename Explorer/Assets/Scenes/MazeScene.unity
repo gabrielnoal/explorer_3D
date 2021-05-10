@@ -1686,7 +1686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &600751051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,12 +1710,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600751050}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2759.7114, y: 749.87695, z: -870.5864}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1681.3013, y: 1107.2509, z: -875.40643}
+  m_LocalScale: {x: 0.6092571, y: 1.4785682, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 914188519}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609335064
 GameObject:
@@ -2573,6 +2573,11 @@ PrefabInstance:
       propertyPath: openSound
       value: 
       objectReference: {fileID: 8300000, guid: 70ffd579bfadfd544ae4b5ef51bc21ef, type: 3}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: isLastDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: lockedSound
@@ -20880,9 +20885,19 @@ PrefabInstance:
       objectReference: {fileID: 2053097474}
     - target: {fileID: 717097927202609818, guid: 091e9349d7714404abb8a56934348af9,
         type: 3}
+      propertyPath: countdown
+      value: 
+      objectReference: {fileID: 600751050}
+    - target: {fileID: 717097927202609818, guid: 091e9349d7714404abb8a56934348af9,
+        type: 3}
       propertyPath: openSound
       value: 
       objectReference: {fileID: 8300000, guid: 30021f2da8028344aa785e808d6cd349, type: 3}
+    - target: {fileID: 717097927202609818, guid: 091e9349d7714404abb8a56934348af9,
+        type: 3}
+      propertyPath: isFirstDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 717097927202609818, guid: 091e9349d7714404abb8a56934348af9,
         type: 3}
       propertyPath: lockedSound
@@ -27559,6 +27574,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1753043871991571393, guid: 7b044f2466b506740a91418c007c4add,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126993788051865452, guid: 7b044f2466b506740a91418c007c4add,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305562536390189288, guid: 7b044f2466b506740a91418c007c4add,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7305562536497785747, guid: 7b044f2466b506740a91418c007c4add,
         type: 3}
       propertyPath: m_Name
@@ -27572,7 +27602,7 @@ PrefabInstance:
     - target: {fileID: 7305562536497785750, guid: 7b044f2466b506740a91418c007c4add,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.022
+      value: 1.0743
       objectReference: {fileID: 0}
     - target: {fileID: 7305562536497785750, guid: 7b044f2466b506740a91418c007c4add,
         type: 3}
