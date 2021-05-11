@@ -1,5 +1,8 @@
 # explorer_3D
 
+## Documentation
+[Doc](https://docs.google.com/document/d/1uz-AWl8rtp_OqCKzvMmPlFv-NrRL4UjwOnxZqrsTSLc/edit?usp=sharing)
+
 ## Some awesome tutorials we've used in this game
 [Main Menu](https://www.youtube.com/watch?v=JivuXdrIHK0)  
 [Minimap](https://www.youtube.com/watch?v=28JTTXqMvOU)  
