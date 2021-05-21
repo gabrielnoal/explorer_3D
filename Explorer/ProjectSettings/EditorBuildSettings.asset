@@ -5,16 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MazeScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/StartGame.unity
     guid: 3791a6456f794b6429df3b286cf941f1
   - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: d295dd540dbc6ce428fa39c92e1af48d
+  - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: 66e12f77555c38a4f80d4581ae9a39c8
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: f677e43c377d0944299a258845002bb3
+  - enabled: 1
+    path: Assets/Scenes/Maze1.unity
+    guid: c6150f2a40943264083ded843414421a
+  - enabled: 1
+    path: Assets/Scenes/Maze2.unity
+    guid: 605b5a7725bcc2440b1af91156090dd7
+  - enabled: 1
+    path: Assets/Scenes/Maze3.unity
+    guid: ab9aba3d1947a2449975d09fdb7f1bf5
+  - enabled: 1
+    path: Assets/Scenes/Maze4.unity
+    guid: d6bd7bfef2e9cae4797550d9c0b61d6a
+  - enabled: 1
+    path: Assets/Scenes/Maze5.unity
+    guid: 2bb97d51c5e54ba488938120bf8e0e3a
   m_configObjects: {}

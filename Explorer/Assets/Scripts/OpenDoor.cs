@@ -24,12 +24,17 @@ public class OpenDoor : MonoBehaviour
     public GameObject countdown;
 
     private bool isClosed = true;
+    public string MazeScene = "";
 
     IEnumerator OpenDoorRoutine()
     {
         yield return new WaitForSeconds(1f);
         door.GetComponent<BoxCollider>().enabled = false;
         gameObject.GetComponent<BoxCollider>().enabled = false;
+        if(MazeScene != "") {
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(MazeScene);
+        }
 
     }
 

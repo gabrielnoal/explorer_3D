@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         GetComponent<AudioSource>().Play();
-        SceneManager.LoadScene("MazeScene");
+        SceneManager.LoadScene("LobbyScene");
     }
 
     public void ShowOptions()
