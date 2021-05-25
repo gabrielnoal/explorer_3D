@@ -57,7 +57,6 @@ public class InventorySelector : MonoBehaviour
             }
         }
 
-        print(selectedItem);
 
         if (selectedItem != lastSelectedItem)
         {
