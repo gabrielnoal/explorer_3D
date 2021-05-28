@@ -20,6 +20,14 @@ public class OpenDoor : MonoBehaviour
 
     private bool isClosed = true;
     public string MazeScene = "";
+    public string doorName = "";
+
+    public GameManager gm;
+
+    private void Start() {
+        gm = GameManager.GetInstance();
+    }
+
 
     IEnumerator OpenDoorRoutine()
     {
@@ -43,17 +51,17 @@ public class OpenDoor : MonoBehaviour
         }
         if (isClosed && isLocked && Input.GetKey(KeyCode.E))
         {
-            GetComponent<AudioSource>().clip = lockedSound;
-            GetComponent<AudioSource>().Play();
-        }
-        if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
-        {
+           /*  GameObject current_item = gm.getCurrentInventoryItem();
+            if (current_item.key && current_item.key.doorName ==    )
+            {
+                UnlockDoor();
+                gm.removeItemFromInventory();
+                _OpenDoor();
 
-            GetComponent<AudioSource>().clip = openSound;
-            GetComponent<AudioSource>().Play();
-            openDoorAnimation.Play();
-            StartCoroutine(OpenDoorRoutine());
-            isClosed = false;
+            } else {
+                GetComponent<AudioSource>().clip = lockedSound;
+                GetComponent<AudioSource>().Play();
+            } */
         }
     }
 
@@ -68,6 +76,15 @@ public class OpenDoor : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         ClearText();
+    }
+
+    public void _OpenDoor()
+    {
+        GetComponent<AudioSource>().clip = openSound;
+        GetComponent<AudioSource>().Play();
+        openDoorAnimation.Play();
+        StartCoroutine(OpenDoorRoutine());
+        isClosed = false;
     }
 
     public void UnlockDoor()

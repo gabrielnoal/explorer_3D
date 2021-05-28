@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Key : MonoBehaviour
+public class Letter : MonoBehaviour
 {
 
     public Text legend;
@@ -11,17 +11,18 @@ public class Key : MonoBehaviour
 
     private bool gotKey = false;
 
-    public string doorName = "";
-    public string keyName = "";
+    public string itemName = "";
     public GameManager gm;
     public IInventoryItem item;
     public Sprite image;
+    public string letterText;
 
     private void Start() {
         gm = GameManager.GetInstance();
-        item.name = keyName;
-        item.isInteractive = false;
+        item.name = itemName;
+        item.isInteractive = true;
         item.image = image;
+        item.letter.text = letterText;
     }
 
     IEnumerator WaitSoundPlay()
