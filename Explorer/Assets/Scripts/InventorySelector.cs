@@ -37,21 +37,36 @@ public class InventorySelector : MonoBehaviour
     {
         if (gm.inventoryChanged)
         {
-            for (int i = 0; i < gm.inventoryItems.Count; i++)
+            if (gm.inventoryItems.Count == 0)
             {
+                for (int i = 0; i < 9; i++)
+                {
+                    GameObject itemImage = GameObject.Find("ItemImage");
 
-                GameObject itemImage = GameObject.Find("ItemImage");
-                if (gm.inventoryItems[i].image)
-                {
-                    itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
-                    itemImage.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
-                }
-                else
-                {
                     itemImage.GetComponent<Image>().sprite = null;
                     itemImage.GetComponent<Image>().color = new Color32(38, 38, 38, 255);
                 }
             }
+            else
+            {
+
+                for (int i = 0; i < gm.inventoryItems.Count; i++)
+                {
+
+                    GameObject itemImage = GameObject.Find("ItemImage");
+                    if (gm.inventoryItems[i].image)
+                    {
+                        itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
+                        itemImage.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+                    }
+                    else
+                    {
+                        itemImage.GetComponent<Image>().sprite = null;
+                        itemImage.GetComponent<Image>().color = new Color32(38, 38, 38, 255);
+                    }
+                }
+            }
+
 
             gm.inventoryChanged = false;
         }

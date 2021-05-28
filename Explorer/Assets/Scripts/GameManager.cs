@@ -77,6 +77,17 @@ public class GameManager
 
     public void removeItemFromInventory()
     {
+        List<IBaseInventoryItem> newList = new List<IBaseInventoryItem>();
+
+        for (int i = 0; i < inventoryItems.Count; i++)
+        {
+            if (inventoryItems[i] != null && selectedItem != i)
+            {
+                newList.Add(inventoryItems[i]);
+            }
+        }
+
+        inventoryItems = newList;
         inventoryItemsChanged();
     }
 
