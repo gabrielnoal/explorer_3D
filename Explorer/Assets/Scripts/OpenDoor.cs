@@ -18,11 +18,6 @@ public class OpenDoor : MonoBehaviour
     private bool setText = true;
     public bool isLocked = true;
 
-    public bool isFirstDoor = false;
-
-    public bool isLastDoor = false;
-    public GameObject countdown;
-
     private bool isClosed = true;
     public string MazeScene = "";
 
@@ -59,14 +54,6 @@ public class OpenDoor : MonoBehaviour
             openDoorAnimation.Play();
             StartCoroutine(OpenDoorRoutine());
             isClosed = false;
-            if (isFirstDoor)
-            {
-                countdown.SetActive(true);
-            }
-            if (isLastDoor)
-            {
-                SceneManager.LoadScene("WinScene");
-            }
         }
     }
 
