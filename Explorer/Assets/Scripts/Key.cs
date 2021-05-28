@@ -14,15 +14,20 @@ public class Key : MonoBehaviour
     public string doorName = "";
     public string keyName = "";
     public GameManager gm;
-    public IInventoryItem item;
+    public IBaseInventoryItem item;
     public Sprite image;
 
-    private void Start() {
+    private void Start()
+    {
+        item = new IBaseInventoryItem();
         gm = GameManager.GetInstance();
         item.name = keyName;
         item.isInteractive = false;
         item.image = image;
+        item.doorName = doorName;
     }
+
+
 
     IEnumerator WaitSoundPlay()
     {
@@ -37,12 +42,11 @@ public class Key : MonoBehaviour
             legend.text = "Press E to GET the KEY";
             setText = false;
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && gotKey == false)
         {
             gotKey = true;
             GetComponent<AudioSource>().Play();
-            //UnlockDoor();
-            //gm.addItemToInventory(item)
+            gm.addItemToInventory(item);
             ClearText();
             StartCoroutine(WaitSoundPlay());
         }

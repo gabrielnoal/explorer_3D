@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class InventorySelector : MonoBehaviour
 {
+
+    GameManager gm;
+
     public List<GameObject> inventoryItems;
     public int lastSelectedItem;
-
-    public int selectedItem;
 
     public int biggestItemIndex;
 
@@ -17,8 +18,9 @@ public class InventorySelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        selectedItem = 0;
-        lastSelectedItem = 0;
+
+        gm = GameManager.GetInstance();
+        lastSelectedItem = gm.selectedItem;
 
 
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("InventoryItem"))
@@ -33,37 +35,59 @@ public class InventorySelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gm.inventoryChanged)
+        {
+            for (int i = 0; i < gm.inventoryItems.Count; i++)
+            {
+
+                GameObject itemImage = GameObject.Find("ItemImage");
+                if (gm.inventoryItems[i].image)
+                {
+                    itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
+                    itemImage.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+                }
+                else
+                {
+                    itemImage.GetComponent<Image>().sprite = null;
+                    itemImage.GetComponent<Image>().color = new Color32(38, 38, 38, 255);
+                }
+            }
+
+            gm.inventoryChanged = false;
+        }
+
+
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
         {
-            if (selectedItem >= 9)
+            if (gm.selectedItem >= 9)
             {
-                selectedItem = 0;
+                gm.selectedItem = 0;
             }
             else
             {
 
-                selectedItem++;
+                gm.selectedItem++;
             }
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
         {
-            if (selectedItem <= 0)
+            if (gm.selectedItem <= 0)
             {
-                selectedItem = biggestItemIndex;
+                gm.selectedItem = biggestItemIndex;
             }
             else
             {
-                selectedItem--;
+                gm.selectedItem--;
             }
         }
 
 
-        if (selectedItem != lastSelectedItem)
+        if (gm.selectedItem != lastSelectedItem)
         {
             inventoryItems[lastSelectedItem].GetComponent<Image>().color = new Color32(38, 38, 38, 100);
-            inventoryItems[selectedItem].GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+            inventoryItems[gm.selectedItem].GetComponent<Image>().color = new Color32(255, 255, 255, 100);
         }
 
-        lastSelectedItem = selectedItem;
+        lastSelectedItem = gm.selectedItem;
     }
 }

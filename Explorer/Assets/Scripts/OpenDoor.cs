@@ -24,7 +24,8 @@ public class OpenDoor : MonoBehaviour
 
     public GameManager gm;
 
-    private void Start() {
+    private void Start()
+    {
         gm = GameManager.GetInstance();
     }
 
@@ -34,7 +35,8 @@ public class OpenDoor : MonoBehaviour
         yield return new WaitForSeconds(1f);
         door.GetComponent<BoxCollider>().enabled = false;
         gameObject.GetComponent<BoxCollider>().enabled = false;
-        if(MazeScene != "") {
+        if (MazeScene != "")
+        {
             yield return new WaitForSeconds(1f);
             SceneManager.LoadScene(MazeScene);
         }
@@ -49,19 +51,26 @@ public class OpenDoor : MonoBehaviour
             setText = false;
 
         }
+
+        print(isClosed && isLocked && Input.GetKey(KeyCode.E));
         if (isClosed && isLocked && Input.GetKey(KeyCode.E))
         {
-           /*  GameObject current_item = gm.getCurrentInventoryItem();
-            if (current_item.key && current_item.key.doorName ==    )
+            IBaseInventoryItem current_item = gm.getSelectedItem();
+            print(current_item != null);
+            print(current_item.doorName);
+            print(current_item.doorName == doorName);
+            if ((current_item != null) && current_item.doorName == doorName)
             {
                 UnlockDoor();
                 gm.removeItemFromInventory();
                 _OpenDoor();
 
-            } else {
+            }
+            else
+            {
                 GetComponent<AudioSource>().clip = lockedSound;
                 GetComponent<AudioSource>().Play();
-            } */
+            }
         }
     }
 

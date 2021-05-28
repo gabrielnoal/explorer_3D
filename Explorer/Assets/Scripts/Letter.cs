@@ -9,20 +9,22 @@ public class Letter : MonoBehaviour
     public Text legend;
     private bool setText = true;
 
-    private bool gotKey = false;
+    private bool gotItem = false;
 
     public string itemName = "";
     public GameManager gm;
-    public IInventoryItem item;
+    public IBaseInventoryItem item;
     public Sprite image;
     public string letterText;
 
-    private void Start() {
+    private void Start()
+    {
+        item = new IBaseInventoryItem();
         gm = GameManager.GetInstance();
         item.name = itemName;
         item.isInteractive = true;
         item.image = image;
-        item.letter.text = letterText;
+        item.letterText = letterText;
     }
 
     IEnumerator WaitSoundPlay()
@@ -33,17 +35,17 @@ public class Letter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (legend && setText && gotKey == false)
+        if (legend && setText && gotItem == false)
         {
             legend.text = "Press E to GET the KEY";
             setText = false;
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && gotItem == false)
         {
-            gotKey = true;
+            gotItem = true;
             GetComponent<AudioSource>().Play();
             //UnlockDoor();
-            //gm.addItemToInventory(item)
+            gm.addItemToInventory(item);
             ClearText();
             StartCoroutine(WaitSoundPlay());
         }
