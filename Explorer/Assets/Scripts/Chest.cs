@@ -25,7 +25,7 @@ public class Chest : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (!opened && setText)
+        if (legend && !opened && setText)
         {
             legend.text = "Press E to OPEN the CHEST";
             setText = false;
@@ -43,7 +43,7 @@ public class Chest : MonoBehaviour
 
     void ClearText()
     {
-        if (!setText)
+        if (legend && !setText)
         {
             legend.text = "";
             setText = true;
