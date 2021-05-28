@@ -49,25 +49,22 @@ public class OpenDoor : MonoBehaviour
         {
             legend.text = isLocked ? "Door is locked, find key to open" : "Press E to OPEN the DOOR";
             setText = false;
-
         }
 
         if (isClosed && isLocked && Input.GetKey(KeyCode.E))
         {
             IBaseInventoryItem current_item = gm.getSelectedItem();
 
-            {
-                UnlockDoor();
-                gm.removeItemFromInventory();
-                _OpenDoor();
-
-            }
-            else
-            {
-                GetComponent<AudioSource>().clip = lockedSound;
-                GetComponent<AudioSource>().Play();
-            }
+            UnlockDoor();
+            gm.removeItemFromInventory();
+            _OpenDoor();
         }
+        else
+        {
+            GetComponent<AudioSource>().clip = lockedSound;
+            GetComponent<AudioSource>().Play();
+        }
+        
     }
 
     void ClearText()
