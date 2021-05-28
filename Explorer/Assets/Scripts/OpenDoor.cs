@@ -40,7 +40,7 @@ public class OpenDoor : MonoBehaviour
 
     void OnTriggerStay()
     {
-        if (setText)
+        if (legend && setText)
         {
             legend.text = isLocked ? "Door is locked, find key to open" : "Press E to OPEN the DOOR";
             setText = false;
@@ -72,7 +72,7 @@ public class OpenDoor : MonoBehaviour
 
     void ClearText()
     {
-        if (!setText)
+        if (legend && !setText)
         {
             legend.text = "";
             setText = true;

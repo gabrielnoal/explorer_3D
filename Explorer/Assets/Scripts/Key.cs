@@ -25,7 +25,7 @@ public class Key : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (setText && gotKey == false)
+        if (legend && setText && gotKey == false)
         {
             legend.text = "Press E to GET the KEY";
             setText = false;
@@ -42,7 +42,7 @@ public class Key : MonoBehaviour
 
     void ClearText()
     {
-        if (!setText)
+        if (legend && !setText)
         {
             legend.text = "";
             setText = true;
