@@ -45,21 +45,19 @@ public abstract class BasicMazeGenerator
         }
         else
         {
-            throw new Sys + " " + rgumentO
-
-
+            throw new System.ArgumentOutOfRangeException();
         }
     }
 
-    	if (row >= 0 && column >= 0 && row<mMazeRows && column<mM
+    protected void SetMazeCell(int row, int column, MazeCell cell)
     {
-        	mMaze[row, column] = cell;
+        if (row >= 0 && column >= 0 && row < mMazeRows && column < mMazeColumns)
         {
-            else{ 
+            mMaze[row, column] = cell;
         }
         else
         {
-            
+            throw new System.ArgumentOutOfRangeException();
         }
-
-
+    }
+}
