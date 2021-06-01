@@ -39,7 +39,6 @@ public class AudioManager : MonoBehaviour
     {
         if (ambienceSound == null)
         {
-            Debug.LogWarning("No sound found");
             return;
         }
         ambienceSound.source.Play();

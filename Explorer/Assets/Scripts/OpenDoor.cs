@@ -91,7 +91,6 @@ public class OpenDoor : MonoBehaviour
 
     public void _OpenDoor()
     {
-        print("Melao");
         GetComponent<AudioSource>().clip = openSound;
         GetComponent<AudioSource>().Play();
         openDoorAnimation.Play();
