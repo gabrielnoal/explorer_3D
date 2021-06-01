@@ -4,16 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-// public class ILetterItem
-// {
-//     public string text { get; set; }
-// }
-
-// public class IKeyItem
-// {
-//     public string doorName { get; set; }
-// }
-
 public interface KeyItem
 {
     string doorName { get; set; }
@@ -73,6 +63,23 @@ public class GameManager
     {
         inventoryItems.Add(item);
         inventoryItemsChanged();
+    }
+
+    public bool checkCurrentItem(string name)
+    {
+        if (selectedItem > inventoryItems.Count - 1)
+        {
+            return false;
+        }
+
+        if (inventoryItems[selectedItem].doorName != null && inventoryItems[selectedItem].doorName == name)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void removeItemFromInventory()

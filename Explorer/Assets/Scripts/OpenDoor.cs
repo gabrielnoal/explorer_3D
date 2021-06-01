@@ -51,7 +51,7 @@ public class OpenDoor : MonoBehaviour
             setText = false;
         }
 
-        if (isClosed && isLocked && Input.GetKey(KeyCode.E))
+        if (isClosed && isLocked && Input.GetKey(KeyCode.E) && gm.checkCurrentItem(doorName))
         {
             IBaseInventoryItem current_item = gm.getSelectedItem();
 
@@ -59,12 +59,13 @@ public class OpenDoor : MonoBehaviour
             gm.removeItemFromInventory();
             _OpenDoor();
         }
-        else
+
+        if (isClosed && isLocked && Input.GetKey(KeyCode.E) && !gm.checkCurrentItem(doorName))
         {
             GetComponent<AudioSource>().clip = lockedSound;
             GetComponent<AudioSource>().Play();
         }
-        
+
     }
 
     void ClearText()
@@ -82,6 +83,7 @@ public class OpenDoor : MonoBehaviour
 
     public void _OpenDoor()
     {
+        print("Melao");
         GetComponent<AudioSource>().clip = openSound;
         GetComponent<AudioSource>().Play();
         openDoorAnimation.Play();
