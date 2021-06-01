@@ -51,6 +51,14 @@ public class OpenDoor : MonoBehaviour
             setText = false;
         }
 
+        if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
+        {
+            UnlockDoor();
+            gm.removeItemFromInventory();
+            _OpenDoor();
+
+        }
+
         if (isClosed && isLocked && Input.GetKey(KeyCode.E) && gm.checkCurrentItem(doorName))
         {
             IBaseInventoryItem current_item = gm.getSelectedItem();
