@@ -39,7 +39,7 @@ public class InventorySelector : MonoBehaviour
         {
             if (gm.inventoryItems.Count == 0)
             {
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 6; i++)
                 {
                     GameObject itemImage = GameObject.Find("ItemImage");
 
@@ -74,7 +74,7 @@ public class InventorySelector : MonoBehaviour
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
         {
-            if (gm.selectedItem >= 7)
+            if (gm.selectedItem >= 5)
             {
                 gm.selectedItem = 0;
             }
