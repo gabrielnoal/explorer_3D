@@ -17,6 +17,7 @@ public class Letter : MonoBehaviour
     public Sprite image;
     public string letterText;
 
+
     private void Start()
     {
         item = new IBaseInventoryItem();
@@ -37,14 +38,13 @@ public class Letter : MonoBehaviour
     {
         if (legend && setText && gotItem == false)
         {
-            legend.text = "Press E to GET the KEY";
+            legend.text = "Press E to GET the Letter";
             setText = false;
         }
         if (Input.GetKey(KeyCode.E) && gotItem == false)
         {
             gotItem = true;
             GetComponent<AudioSource>().Play();
-            //UnlockDoor();
             gm.addItemToInventory(item);
             ClearText();
             StartCoroutine(WaitSoundPlay());
@@ -64,4 +64,5 @@ public class Letter : MonoBehaviour
     {
         ClearText();
     }
+
 }
