@@ -504,7 +504,7 @@ PrefabInstance:
     - target: {fileID: 1313967240825253801, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
       propertyPath: m_text
-      value: Maze 2_1
+      value: Door 1
       objectReference: {fileID: 0}
     - target: {fileID: 6339111221946798987, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
@@ -568,6 +568,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20ef387b960124440b26973d8d472b09, type: 3}
+--- !u!114 &194921742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 246228866382737203, guid: 60e39419315e34e43865e7bd249361fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1273796376}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &430238854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4723923718566128032, guid: 60e39419315e34e43865e7bd249361fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1273796376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &775035619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -671,9 +689,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7305562536497785748, guid: 7b044f2466b506740a91418c007c4add,
         type: 3}
+      propertyPath: LetterTextUI
+      value: 
+      objectReference: {fileID: 194921742}
+    - target: {fileID: 7305562536497785748, guid: 7b044f2466b506740a91418c007c4add,
+        type: 3}
       propertyPath: playerCanMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7305562536497785748, guid: 7b044f2466b506740a91418c007c4add,
+        type: 3}
+      propertyPath: LetterContentUI
+      value: 
+      objectReference: {fileID: 430238854}
     - target: {fileID: 7305562536497785750, guid: 7b044f2466b506740a91418c007c4add,
         type: 3}
       propertyPath: m_RootOrder
@@ -982,11 +1010,21 @@ PrefabInstance:
       propertyPath: objectToDisable2
       value: 
       objectReference: {fileID: 1273796382}
+    - target: {fileID: 3866577493669671828, guid: b90b52ba800066f429db0e21fa68445c,
+        type: 3}
+      propertyPath: m_text
+      value: Door 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3895487836505291992, guid: b90b52ba800066f429db0e21fa68445c,
         type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796377}
+    - target: {fileID: 3895487836505291992, guid: b90b52ba800066f429db0e21fa68445c,
+        type: 3}
+      propertyPath: isKeyDoor
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8101410103963684790, guid: b90b52ba800066f429db0e21fa68445c,
         type: 3}
       propertyPath: m_Name

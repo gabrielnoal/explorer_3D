@@ -19,6 +19,7 @@ public class OpenDoor : MonoBehaviour
     public bool isLocked = true;
 
     private bool isClosed = true;
+    public bool isKeyDoor = true;
     public string MazeScene = "";
     public string doorName = "";
 
@@ -48,7 +49,12 @@ public class OpenDoor : MonoBehaviour
     {
         if (legend && setText)
         {
-            legend.text = isLocked ? "Door is locked, find key to open" : "Press E to OPEN the DOOR";
+            if (isLocked)
+            {
+                legend.text = isKeyDoor ? "Door is locked, find KEY to open" : "Door is locked, find the PASSWORD to open";
+            } else {
+                legend.text = "Press E to OPEN the DOOR";
+            }
             setText = false;
         }
 

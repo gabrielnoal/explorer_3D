@@ -31,7 +31,7 @@ public class Key : MonoBehaviour
 
     IEnumerator WaitSoundPlay()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.25f);
         gameObject.SetActive(false);
     }
 
