@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Chest : MonoBehaviour
 {
     public Animation openChestAnimation;
-    public Animation keyAnimation;
-    public Component key;
+    public Animation itemAnimation;
+    public Component item;
     public Text legend;
 
     private bool opened;
@@ -20,7 +20,7 @@ public class Chest : MonoBehaviour
     IEnumerator WaitChestOpen()
     {
         yield return new WaitForSeconds(1.5f);
-        key.GetComponent<BoxCollider>().enabled = true;
+        item.GetComponent<BoxCollider>().enabled = true;
     }
 
     private void OnTriggerStay(Collider other)
@@ -35,7 +35,7 @@ public class Chest : MonoBehaviour
             ClearText();
             GetComponent<AudioSource>().Play();
             openChestAnimation.Play();
-            keyAnimation.Play();
+            itemAnimation.Play();
             StartCoroutine(WaitChestOpen());
             opened = true;
         }
