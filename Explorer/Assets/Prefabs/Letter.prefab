@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1787765464}
   - component: {fileID: 1787765463}
   - component: {fileID: 8904783410740344393}
+  - component: {fileID: 4234395470095114858}
   m_Layer: 0
   m_Name: Letter
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7725042593641350362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.8528, y: 0.0924, z: 11.0515}
-  m_LocalScale: {x: 0.061433885, y: 0.061433833, z: 0.061433833}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -91,10 +92,10 @@ BoxCollider:
   m_GameObject: {fileID: 7725042593641350362}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0.623175, y: 4.2991405, z: 0.029982865}
+  m_Size: {x: 4.074999, y: 2.616249, z: 6.4722033}
+  m_Center: {x: -0.16098253, y: 0.67261064, z: 1.6105334}
 --- !u!114 &1787765463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,3 +208,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!111 &4234395470095114858
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725042593641350362}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d4d37c3c23e7e844389c3ca31975363e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d4d37c3c23e7e844389c3ca31975363e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

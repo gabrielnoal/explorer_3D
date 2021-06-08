@@ -32,14 +32,15 @@ public class OpenDoor : MonoBehaviour
 
     IEnumerator OpenDoorRoutine()
     {
+
+        if (MazeScene != "")
+        {
+            yield return new WaitForSeconds(0.5f);
+            SceneManager.LoadScene(MazeScene);
+        }
         yield return new WaitForSeconds(1f);
         door.GetComponent<BoxCollider>().enabled = false;
         gameObject.GetComponent<BoxCollider>().enabled = false;
-        if (MazeScene != "")
-        {
-            yield return new WaitForSeconds(1f);
-            SceneManager.LoadScene(MazeScene);
-        }
 
     }
 

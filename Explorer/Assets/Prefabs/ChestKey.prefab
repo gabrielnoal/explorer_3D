@@ -917,8 +917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openChestAnimation: {fileID: 2911503010384227052}
-  keyAnimation: {fileID: 1393614355288714483}
-  key: {fileID: 4134228463690994454}
+  itemAnimation: {fileID: 1393614355288714483}
+  item: {fileID: 4134228463690994454}
   legend: {fileID: 0}
 --- !u!65 &8346772232786574468
 BoxCollider:
