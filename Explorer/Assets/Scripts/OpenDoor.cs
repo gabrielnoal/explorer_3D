@@ -55,7 +55,7 @@ public class OpenDoor : MonoBehaviour
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
             UnlockDoor();
-            gm.removeItemFromInventory();
+            // gm.removeItemFromInventory();
             _OpenDoor();
 
         }

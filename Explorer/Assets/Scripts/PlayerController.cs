@@ -70,12 +70,10 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && Time.time > timestamp)
         {
-
             if (gm.inventoryItems.Count > 0 && gm.inventoryItems[gm.selectedItem] != null)
             {
                 if (gm.inventoryItems[gm.selectedItem].name.Contains("Letter"))
                 {
-                    // GameObject LetterContentUI = GameObject.Find("LettersContent");
                     if (this.isLetterUIOpen)
                     {
                         LetterContentUI.SetActive(false);

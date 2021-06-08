@@ -30,6 +30,23 @@ public class InventorySelector : MonoBehaviour
 
         biggestItemIndex = inventoryItems.Count - 1;
         inventoryItems[0].GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+
+        for (int i = 0; i < gm.inventoryItems.Count; i++)
+        {
+
+            GameObject itemImage = GameObject.Find("ItemImage");
+            if (gm.inventoryItems[i].image)
+            {
+                itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
+                itemImage.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+            }
+            else
+            {
+                itemImage.GetComponent<Image>().sprite = null;
+                itemImage.GetComponent<Image>().color = new Color32(38, 38, 38, 255);
+            }
+        }
+
     }
 
     // Update is called once per frame
