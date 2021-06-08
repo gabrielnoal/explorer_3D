@@ -32,7 +32,7 @@ public class keypad : MonoBehaviour
     // audioData : Play this sound when user enters in password incorrectly too many times
 
     [Header("Keypad Settings")]
-    public string curPassword = "123";
+    public string curPassword = "1234";
     public string input;
     public Text displayText;
     public AudioSource audioData;
