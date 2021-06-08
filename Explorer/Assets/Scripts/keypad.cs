@@ -139,12 +139,11 @@ public class keypad : MonoBehaviour
 
     public void CloseKeypad()
     {
-        print("close");
         objectToDisable.SetActive(true);
         objectToDisable2.SetActive(true);
         objectToEnable.SetActive(false);
         keypadScreen = false;
-        //player.GetComponent<PlayerController>().playerCanMove = true;
+        player.GetComponent<PlayerController>().playerCanMove = true;
         ResetInput();
     }
 
