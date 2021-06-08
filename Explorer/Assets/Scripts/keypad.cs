@@ -15,6 +15,9 @@ using UnityEngine.SceneManagement;
 
 public class keypad : MonoBehaviour
 {
+
+    public Text legend;
+    private bool setText = true;
     // *** CAN DELETE THESE ** \\
     // Used to hide joystick and slider
     [Header("Objects to Hide/Show")]
@@ -41,6 +44,7 @@ public class keypad : MonoBehaviour
     private bool keypadScreen;
     private float btnClicked = 0;
     private float numOfGuesses;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -85,12 +89,23 @@ public class keypad : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (legend && setText && !keypadScreen)
+        {
+            legend.text = "Press E to OPEN KEYPAD";
+            setText = false;
+        }
         if (Input.GetKey(KeyCode.E) && !keypadScreen)
         {
-            keypadScreen = true;
-            objectToDisable.SetActive(false);
-            objectToDisable2.SetActive(false);
-            objectToEnable.SetActive(true);
+            OpenKeypad();
+        }
+    }
+
+    void ClearText()
+    {
+        if (legend && !setText)
+        {
+            legend.text = "";
+            setText = true;
         }
     }
 
@@ -101,6 +116,7 @@ public class keypad : MonoBehaviour
         {
             CloseKeypad();
         }
+        ClearText();
     }
 
     public void ResetInput()
@@ -111,12 +127,24 @@ public class keypad : MonoBehaviour
         btnClicked = 0;
     }
 
+    public void OpenKeypad()
+    {
+        ClearText();
+        player.GetComponent<PlayerController>().playerCanMove = false;
+        keypadScreen = true;
+        objectToDisable.SetActive(false);
+        objectToDisable2.SetActive(false);
+        objectToEnable.SetActive(true);
+    }
+
     public void CloseKeypad()
     {
+        print("close");
         objectToDisable.SetActive(true);
         objectToDisable2.SetActive(true);
         objectToEnable.SetActive(false);
         keypadScreen = false;
+        //player.GetComponent<PlayerController>().playerCanMove = true;
         ResetInput();
     }
 

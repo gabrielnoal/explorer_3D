@@ -168,7 +168,6 @@ GameObject:
   - component: {fileID: 2357021676701823475}
   - component: {fileID: 2357021676701823474}
   - component: {fileID: 2357021676701823473}
-  - component: {fileID: 2357021676701823472}
   - component: {fileID: 2357021676701823439}
   m_Layer: 5
   m_Name: Button 0
@@ -278,7 +277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021676701823472}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -288,7 +287,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -299,19 +298,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 0
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021676701823472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021676701823437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021676701823439
 AudioSource:
   m_ObjectHideFlags: 0
@@ -420,7 +407,6 @@ GameObject:
   - component: {fileID: 2357021676738422029}
   - component: {fileID: 2357021676738422028}
   - component: {fileID: 2357021676738422027}
-  - component: {fileID: 2357021676738422026}
   - component: {fileID: 2357021676738422025}
   m_Layer: 5
   m_Name: Button B
@@ -530,7 +516,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021676738422026}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -540,7 +526,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -551,19 +537,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: C
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021676738422026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021676738422023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021676738422025
 AudioSource:
   m_ObjectHideFlags: 0
@@ -672,7 +646,6 @@ GameObject:
   - component: {fileID: 2357021676741703545}
   - component: {fileID: 2357021676741703544}
   - component: {fileID: 2357021676741703543}
-  - component: {fileID: 2357021676741703542}
   - component: {fileID: 2357021676741703541}
   m_Layer: 5
   m_Name: Button 4
@@ -782,7 +755,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021676741703542}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -792,7 +765,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -803,19 +776,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 4
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021676741703542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021676741703539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021676741703541
 AudioSource:
   m_ObjectHideFlags: 0
@@ -924,7 +885,6 @@ GameObject:
   - component: {fileID: 2357021676775377840}
   - component: {fileID: 2357021676775377807}
   - component: {fileID: 2357021676775377806}
-  - component: {fileID: 2357021676775377805}
   - component: {fileID: 2357021676775377804}
   m_Layer: 5
   m_Name: Button 6
@@ -1034,7 +994,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021676775377805}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -1044,7 +1004,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -1055,19 +1015,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 6
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021676775377805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021676775377802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021676775377804
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1410,7 +1358,6 @@ GameObject:
   - component: {fileID: 2357021676908052847}
   - component: {fileID: 2357021676908052846}
   - component: {fileID: 2357021676908052845}
-  - component: {fileID: 2357021676908052844}
   - component: {fileID: 2357021676908052843}
   m_Layer: 5
   m_Name: Button A
@@ -1520,7 +1467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021676908052844}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -1530,7 +1477,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -1541,19 +1488,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Q
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021676908052844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021676908052841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021676908052843
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1740,7 +1675,6 @@ GameObject:
   - component: {fileID: 2357021677025727653}
   - component: {fileID: 2357021677025727652}
   - component: {fileID: 2357021677025727651}
-  - component: {fileID: 2357021677025727650}
   - component: {fileID: 2357021677025727649}
   m_Layer: 5
   m_Name: Button 5
@@ -1850,7 +1784,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021677025727650}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -1860,7 +1794,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -1871,19 +1805,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 5
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021677025727650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021677025727679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021677025727649
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2070,7 +1992,6 @@ GameObject:
   - component: {fileID: 2357021677203284568}
   - component: {fileID: 2357021677203284567}
   - component: {fileID: 2357021677203284566}
-  - component: {fileID: 2357021677203284569}
   - component: {fileID: 2357021677203284570}
   m_Layer: 5
   m_Name: Button 1
@@ -2180,7 +2101,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021677203284569}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -2190,7 +2111,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -2201,19 +2122,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: A
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021677203284569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021677203284564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021677203284570
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2400,7 +2309,6 @@ GameObject:
   - component: {fileID: 2357021677499314350}
   - component: {fileID: 2357021677499314349}
   - component: {fileID: 2357021677499314348}
-  - component: {fileID: 2357021677499314347}
   - component: {fileID: 2357021677499314346}
   m_Layer: 5
   m_Name: Button 9
@@ -2510,7 +2418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021677499314347}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -2520,7 +2428,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -2531,19 +2439,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 9
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021677499314347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021677499314344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021677499314346
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2730,7 +2626,6 @@ GameObject:
   - component: {fileID: 2357021677698554259}
   - component: {fileID: 2357021677698554258}
   - component: {fileID: 2357021677698554257}
-  - component: {fileID: 2357021677698554256}
   - component: {fileID: 2357021677698554351}
   m_Layer: 5
   m_Name: Button 2
@@ -2840,7 +2735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021677698554256}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -2850,7 +2745,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -2861,19 +2756,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 2
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021677698554256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021677698554349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021677698554351
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3134,7 +3017,6 @@ GameObject:
   - component: {fileID: 2357021677847723765}
   - component: {fileID: 2357021677847723764}
   - component: {fileID: 2357021677847723763}
-  - component: {fileID: 2357021677847723762}
   - component: {fileID: 2357021677847723761}
   m_Layer: 5
   m_Name: Button 3
@@ -3244,7 +3126,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021677847723762}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -3254,9 +3136,9 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
-        m_MethodName: ValueEntered
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3265,19 +3147,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 3
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021677847723762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021677847723727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021677847723761
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3498,6 +3368,7 @@ RectTransform:
   - {fileID: 2357021676738422024}
   - {fileID: 2357021676908052842}
   - {fileID: 6667942350561339842}
+  - {fileID: 6124266741901643859}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3766,7 +3637,6 @@ GameObject:
   - component: {fileID: 2357021678331905369}
   - component: {fileID: 2357021678331905368}
   - component: {fileID: 2357021678331905367}
-  - component: {fileID: 2357021678331905366}
   - component: {fileID: 2357021678331905365}
   m_Layer: 5
   m_Name: Button 7
@@ -3876,7 +3746,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021678331905366}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -3886,7 +3756,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -3897,19 +3767,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 7
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021678331905366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021678331905363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021678331905365
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4018,7 +3876,6 @@ GameObject:
   - component: {fileID: 2357021678426590660}
   - component: {fileID: 2357021678426590659}
   - component: {fileID: 2357021678426590658}
-  - component: {fileID: 2357021678426590657}
   - component: {fileID: 2357021678426590656}
   m_Layer: 5
   m_Name: Button 8
@@ -4128,7 +3985,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2357021678426590657}
+      - m_Target: {fileID: 0}
         m_MethodName: Clicky
         m_Mode: 1
         m_Arguments:
@@ -4138,7 +3995,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 0}
         m_MethodName: ValueEntered
         m_Mode: 5
@@ -4149,19 +4006,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 8
           m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2357021678426590657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357021678426590686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 0
 --- !u!82 &2357021678426590656
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4258,6 +4103,87 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &4822464627848895953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6124266741901643859}
+  - component: {fileID: 5238230777531763889}
+  - component: {fileID: 3506823220412491949}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6124266741901643859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822464627848895953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2357021678099664591}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.5, y: -370.2}
+  m_SizeDelta: {x: 1128.0664, y: 112.562744}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5238230777531763889
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822464627848895953}
+  m_CullTransparentMesh: 0
+--- !u!114 &3506823220412491949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822464627848895953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Use your KEYBOARD to type the password.
+
+    Press Q to QUIT and C to
+    CLEAR'
 --- !u!1 &7262408538639575951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,7 +4196,6 @@ GameObject:
   - component: {fileID: 3016322069376478272}
   - component: {fileID: 2541053136449149529}
   - component: {fileID: 5599104148294887683}
-  - component: {fileID: 5886642098533437606}
   - component: {fileID: 8926481547652297717}
   m_Layer: 5
   m_Name: EnteredValues
@@ -4380,18 +4305,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5886642098533437606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262408538639575951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6bd37725f099433e9a5529db03b7185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &8926481547652297717
 AudioSource:
   m_ObjectHideFlags: 0

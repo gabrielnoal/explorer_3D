@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public GameObject LetterContentUI;
     private float timestamp = 0f;
     public float InputRate = 0.25f;
+    public bool playerCanMove = true;
 
 
 
@@ -56,11 +57,12 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector3 direction = transform.right * x + transform.up * y + transform.forward * z;
-
-        characterController.Move(direction * _baseSpeed * Time.deltaTime);
-        transform.Rotate(Vector3.up, mouse_dX);
-
-        playerCamera.transform.localRotation = Quaternion.Euler(cameraRotation, 0.0f, 0.0f);
+        characterController.Move(direction * Time.deltaTime * (playerCanMove ? _baseSpeed : 0.0f));
+        if (playerCanMove)
+        {
+            transform.Rotate(Vector3.up, mouse_dX);
+            playerCamera.transform.localRotation = Quaternion.Euler(cameraRotation, 0.0f, 0.0f);
+        }
     }
 
 
