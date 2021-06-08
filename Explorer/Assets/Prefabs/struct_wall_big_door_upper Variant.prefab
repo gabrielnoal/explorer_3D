@@ -87,10 +87,9 @@ MonoBehaviour:
   openSound: {fileID: 8300000, guid: 70ffd579bfadfd544ae4b5ef51bc21ef, type: 3}
   lockedSound: {fileID: 8300000, guid: 2f2ed8fad2afe8449b8149d45321d381, type: 3}
   isLocked: 1
-  isFirstDoor: 0
-  isLastDoor: 0
-  countdown: {fileID: 0}
+  isKeyDoor: 1
   MazeScene: 
+  doorName: 
 --- !u!82 &2762950920019673163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -294,15 +293,15 @@ RectTransform:
   m_GameObject: {fileID: 4095892967804837183}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.89832, y: 0.90374, z: 1}
   m_Children: []
   m_Father: {fileID: 2219112402368851389}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.133, y: -0.35}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.0013, y: 0.002}
+  m_SizeDelta: {x: 0.9882109, y: 0.9662914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &673156609736282798
 MeshRenderer:
@@ -404,8 +403,8 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 5
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
