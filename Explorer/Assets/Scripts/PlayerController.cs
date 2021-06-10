@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         gm = GameManager.GetInstance();
+        Screen.lockCursor = true;
 
         characterController = GetComponent<CharacterController>();
         playerCamera = GameObject.Find("Main Camera");
