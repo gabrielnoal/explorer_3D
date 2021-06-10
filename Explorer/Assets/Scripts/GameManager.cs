@@ -70,14 +70,10 @@ public class GameManager
 
     public bool checkCurrentItem(string name)
     {
-        Debug.Log("Count: " + inventoryItems.Count);
-        Debug.Log("selectedItem: " + selectedItem);
         if (selectedItem > inventoryItems.Count - 1)
         {
             return false;
         }
-        Debug.Log("inventoryItems[selectedItem].doorName: " + inventoryItems[selectedItem].doorName);
-        Debug.Log("inventoryItems[selectedItem].doorName == name: " + inventoryItems[selectedItem].doorName == name);
 
         if (inventoryItems[selectedItem].doorName != null && inventoryItems[selectedItem].doorName == name)
         {

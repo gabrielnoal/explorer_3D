@@ -115,14 +115,11 @@ public class OpenDoor : MonoBehaviour
             }
             setText = false;
         }
-        Debug.Log(doorName);
-        Debug.Log(gm.checkCurrentItem(doorName));
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
             UnlockDoor();
             _OpenDoor();
         }
-
         else if (isClosed && isLocked && Input.GetKey(KeyCode.E) && gm.checkCurrentItem(doorName))
         {
             IBaseInventoryItem current_item = gm.getSelectedItem();
@@ -131,7 +128,6 @@ public class OpenDoor : MonoBehaviour
             gm.removeItemFromInventory();
             _OpenDoor();
         }
-
         else if (isClosed && isLocked && Input.GetKey(KeyCode.E) && !gm.checkCurrentItem(doorName))
         {
             GetComponent<AudioSource>().clip = lockedSound;
