@@ -5,16 +5,41 @@ using UnityEngine.UI;
 
 public class Chest : MonoBehaviour
 {
+    public int _id;
+
     public Animation openChestAnimation;
     public Animation itemAnimation;
     public Component item;
     public Text legend;
 
-    private bool opened;
+    private bool isOpen = false;
     private bool setText = true;
+
+    public GameManager gm;
+    public ChestState chestState;
+
+    SceneState sceneState;
     void Start()
     {
-        opened = false;
+        gm = GameManager.GetInstance();
+
+        sceneState = gm.gs.getStateFromCurrentScene();
+        if (sceneState.hasChestStateById(_id))
+        {
+            chestState = sceneState.getChestStateById(_id);
+            isOpen = chestState.isOpen;
+            if (isOpen)
+            {
+                openChestAnimation.Play();
+                itemAnimation.Play();
+
+            }
+        }
+        else
+        {
+            chestState = new ChestState(isOpen);
+            sceneState.setChestStateById(_id, chestState);
+        }
     }
 
     IEnumerator WaitChestOpen()
@@ -25,19 +50,21 @@ public class Chest : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (legend && !opened && setText)
+        if (legend && !isOpen && setText)
         {
             legend.text = "Press E to OPEN the CHEST";
             setText = false;
         }
-        if (!opened && Input.GetKey(KeyCode.E))
+        if (!isOpen && Input.GetKey(KeyCode.E))
         {
             ClearText();
             GetComponent<AudioSource>().Play();
             openChestAnimation.Play();
             itemAnimation.Play();
             StartCoroutine(WaitChestOpen());
-            opened = true;
+            isOpen = true;
+            chestState.isOpen = isOpen;
+            sceneState.setChestStateById(_id, chestState);
         }
     }
 

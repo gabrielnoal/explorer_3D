@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.026388744, g: 0.036782935, b: 0.04279045, a: 1}
+  m_IndirectSpecularColor: {r: 0.026653111, g: 0.036783576, b: 0.043073773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -511,6 +511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900733464639259348, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}
+      propertyPath: _id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900733464639259348, guid: f6cae735bf49f6840aaece40590029b5,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796383}
@@ -519,6 +524,11 @@ PrefabInstance:
       propertyPath: letterText
       value: Starting from 1 till the 6th number of the sequence. This code should
         give you the access to the desired chest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689515272376630621, guid: f6cae735bf49f6840aaece40590029b5,
+        type: 3}
+      propertyPath: _id
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6689515272376630621, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}
@@ -709,9 +719,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322583700546615508, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
+      propertyPath: _id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322583700546615508, guid: 01dde71d73f5ae54fb845039a297f3ec,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796383}
+    - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
+        type: 3}
+      propertyPath: _id
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: legend
@@ -793,6 +813,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900733464639259348, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}
+      propertyPath: _id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900733464639259348, guid: f6cae735bf49f6840aaece40590029b5,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796383}
@@ -802,6 +827,11 @@ PrefabInstance:
       value: His work is known as one of the most popular number sequences in the
         world... It's like a magical sequence of numbers that defines patterns in
         our universe and nature...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689515272376630621, guid: f6cae735bf49f6840aaece40590029b5,
+        type: 3}
+      propertyPath: _id
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6689515272376630621, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}

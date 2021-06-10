@@ -569,7 +569,7 @@ PrefabInstance:
     - target: {fileID: 572202782362288199, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: m_Name
-      value: Chest
+      value: Chest 1
       objectReference: {fileID: 0}
     - target: {fileID: 917344311580924669, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
@@ -628,15 +628,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322583700546615508, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
+      propertyPath: _id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322583700546615508, guid: 01dde71d73f5ae54fb845039a297f3ec,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796377}
+    - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
+        type: 3}
+      propertyPath: _id
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: image
       value: 
       objectReference: {fileID: 21300000, guid: 518f41dc3cae52147878203043fb9539,
         type: 3}
+    - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
+        type: 3}
+      propertyPath: legend
+      value: 
+      objectReference: {fileID: 1273796377}
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: keyName
@@ -964,7 +979,7 @@ PrefabInstance:
     - target: {fileID: 572202782362288199, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: m_Name
-      value: Chest (1)
+      value: Chest
       objectReference: {fileID: 0}
     - target: {fileID: 917344311580924669, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}

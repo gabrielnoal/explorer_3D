@@ -17,19 +17,29 @@ public class DoorState
 
 public class ChestState
 {
+    public bool isOpen;
 
+    public ChestState(bool _isOpen)
+    {
+        isOpen = _isOpen;
+    }
 }
 
-public class KeyState
+public class ItemState
 {
+    public bool gotItem;
 
+    public ItemState(bool _gotItem)
+    {
+        gotItem = _gotItem;
+    }
 }
 
 public class SceneState
 {
     public Dictionary<int, DoorState> doors = new Dictionary<int, DoorState>();
-    public Dictionary<int, ChestState> chests;
-    public Dictionary<int, KeyState> keys;
+    public Dictionary<int, ChestState> chests = new Dictionary<int, ChestState>();
+    public Dictionary<int, ItemState> items = new Dictionary<int, ItemState>();
 
     public bool hasDoorStateById(int id)
     {
@@ -50,6 +60,48 @@ public class SceneState
             doors.Add(id,newState);
         }
         return doors[id];
+    }
+
+    public bool hasChestStateById(int id)
+    {
+        return chests.ContainsKey(id);
+    }
+
+    public ChestState getChestStateById(int id)
+    {
+        return chests[id];
+    }
+
+    public ChestState setChestStateById(int id, ChestState newState)
+    {
+        if (hasChestStateById(id))
+        {
+            chests[id] = newState;
+        } else {
+            chests.Add(id,newState);
+        }
+        return chests[id];
+    }
+
+    public bool hasItemStateById(int id)
+    {
+        return items.ContainsKey(id);
+    }
+
+    public ItemState getItemStateById(int id)
+    {
+        return items[id];
+    }
+
+    public ItemState setItemStateById(int id, ItemState newState)
+    {
+        if (hasItemStateById(id))
+        {
+            items[id] = newState;
+        } else {
+            items.Add(id,newState);
+        }
+        return items[id];
     }
 }
 

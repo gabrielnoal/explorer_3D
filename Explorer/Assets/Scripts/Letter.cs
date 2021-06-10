@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Letter : MonoBehaviour
 {
 
+    public int _id;
+
     public Text legend;
     private bool setText = true;
 
@@ -17,6 +19,9 @@ public class Letter : MonoBehaviour
     public Sprite image;
     public string letterText;
 
+    public ItemState itemState;
+
+    SceneState sceneState;
 
     private void Start()
     {
@@ -26,6 +31,22 @@ public class Letter : MonoBehaviour
         item.isInteractive = true;
         item.image = image;
         item.letterText = letterText;
+
+        sceneState = gm.gs.getStateFromCurrentScene();
+        if (sceneState.hasItemStateById(_id))
+        {
+            itemState = sceneState.getItemStateById(_id);
+            gotItem = itemState.gotItem;
+            if (gotItem)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            itemState = new ItemState(gotItem);
+            sceneState.setItemStateById(_id, itemState);
+        }
     }
 
     IEnumerator WaitSoundPlay()
