@@ -489,6 +489,26 @@ PrefabInstance:
       propertyPath: MazeScene
       value: WinScene
       objectReference: {fileID: 0}
+    - target: {fileID: 1177275305517069407, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.8011602
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177275305517069407, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 6.924569
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177275305517069407, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.40058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177275305517069407, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 3.284212
+      objectReference: {fileID: 0}
     - target: {fileID: 2887757209771091119, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: m_text
