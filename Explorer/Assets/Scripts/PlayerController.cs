@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviour
@@ -30,11 +31,26 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         gm = GameManager.GetInstance();
-        Screen.lockCursor = true;
+
+        Cursor.lockState = CursorLockMode.Locked;
 
         characterController = GetComponent<CharacterController>();
         playerCamera = GameObject.Find("Main Camera");
+
         cameraRotation = 0.0f;
+
+        if (SceneManager.GetActiveScene().name == "LobbyScene")
+        {
+            characterController.enabled = false;
+            gameObject.transform.position = new Vector3(gm.gs.x_position, gm.gs.y_position, gm.gs.z_position);
+
+            var rotationVector = transform.rotation.eulerAngles;
+            rotationVector.y = gm.gs.y_rotation;
+            transform.rotation = Quaternion.Euler(rotationVector);
+
+            characterController.enabled = true;
+        }
+
     }
 
     void MovePlayer()
@@ -71,9 +87,6 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && Time.time > timestamp)
         {
-            print("Items in inventory: " + gm.inventoryItems.Count);
-            print("Current selected item is: " + gm.selectedItem);
-            print("gm.inventoryItem[gm.selectedItem] is: " + gm.inventoryItems[gm.selectedItem]);
             if (gm.inventoryItems.Count > 0 && gm.inventoryItems[gm.selectedItem] != null)
             {
                 if (gm.inventoryItems[gm.selectedItem].name.Contains("Letter"))

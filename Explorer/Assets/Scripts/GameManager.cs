@@ -29,6 +29,8 @@ public class IBaseInventoryItem : LetterItem, KeyItem
 public class GameManager
 {
 
+    public GameState gs;
+
     public List<IBaseInventoryItem> inventoryItems;
 
     private static GameManager _instance;
@@ -52,6 +54,7 @@ public class GameManager
         inventoryItems = new List<IBaseInventoryItem>();
         inventoryChanged = false;
         selectedItem = 0;
+        gs = GameState.GetInstance();
     }
 
     public void inventoryItemsChanged()

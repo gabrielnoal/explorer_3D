@@ -25,6 +25,7 @@ public class OpenDoor : MonoBehaviour
 
     public GameManager gm;
 
+
     private void Start()
     {
         gm = GameManager.GetInstance();
@@ -36,6 +37,34 @@ public class OpenDoor : MonoBehaviour
 
         if (MazeScene != "")
         {
+
+            switch (MazeScene)
+            {
+
+                case "Maze1":
+                    gm.gs.setPosition(-1.564f, 9.605f);
+                    gm.gs.setRotation(64f);
+                    break;
+                case "Maze2":
+                    gm.gs.setPosition(-1.564f, 11.469f);
+                    gm.gs.setRotation(117f);
+                    break;
+                case "Maze3":
+                    gm.gs.setPosition(-0.023f, 12.122f);
+                    gm.gs.setRotation(173f);
+                    break;
+                case "Maze4":
+                    gm.gs.setPosition(1.408f, 11.2f);
+                    gm.gs.setRotation(-143f);
+                    break;
+                case "Maze5":
+                    gm.gs.setPosition(1.408f, 9.328f);
+                    gm.gs.setRotation(-54f);
+                    break;
+                default:
+                    break;
+
+            }
             yield return new WaitForSeconds(0.5f);
             SceneManager.LoadScene(MazeScene);
         }
@@ -62,10 +91,8 @@ public class OpenDoor : MonoBehaviour
 
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
-            print("FELL HERE");
             UnlockDoor();
             _OpenDoor();
-
         }
 
         else if (isClosed && isLocked && Input.GetKey(KeyCode.E) && gm.checkCurrentItem(doorName))
