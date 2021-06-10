@@ -456,7 +456,7 @@ PrefabInstance:
     - target: {fileID: 5406649352013993227, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: m_Name
-      value: struct_wall_big_door_upper Variant
+      value: LobbyDoor
       objectReference: {fileID: 0}
     - target: {fileID: 5756063252183873813, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
@@ -645,7 +645,7 @@ PrefabInstance:
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: doorName
-      value: door_2_0
+      value: Maze2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01dde71d73f5ae54fb845039a297f3ec, type: 3}
@@ -1039,7 +1039,7 @@ PrefabInstance:
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: doorName
-      value: door_1_1
+      value: Maze1KeyDoor1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01dde71d73f5ae54fb845039a297f3ec, type: 3}
@@ -8759,13 +8759,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1268744113911521509, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
+      propertyPath: _id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268744113911521509, guid: 20ef387b960124440b26973d8d472b09,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796377}
     - target: {fileID: 1268744113911521509, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
       propertyPath: doorName
-      value: door_1_1
+      value: Maze1KeyDoor1
       objectReference: {fileID: 0}
     - target: {fileID: 1313967240825253801, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
@@ -8775,7 +8780,7 @@ PrefabInstance:
     - target: {fileID: 6339111221946798987, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
       propertyPath: m_Name
-      value: struct_wall_cell_door_main
+      value: KeyDoor
       objectReference: {fileID: 0}
     - target: {fileID: 6679643903351884081, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}

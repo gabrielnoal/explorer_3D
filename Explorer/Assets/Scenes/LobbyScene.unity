@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.026388744, g: 0.036782935, b: 0.04279045, a: 1}
+  m_IndirectSpecularColor: {r: 0.026653111, g: 0.036783576, b: 0.043073773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3311,18 +3311,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: _id
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 4778048273058742302}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: doorName
+      value: Maze5
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: isLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: MazeScene
       value: Maze5
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: canOpenDoor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2887757209771091119, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
@@ -3389,6 +3404,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorMaze5
       objectReference: {fileID: 0}
+    - target: {fileID: 5406649352013993227, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431464af0484db944a8711c648ab1f1f, type: 3}
 --- !u!1001 &1030264989226076390
@@ -3400,18 +3420,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: _id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 4778048273058742302}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: doorName
+      value: Maze4
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: isLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: MazeScene
       value: Maze4
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: canOpenDoor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2887757209771091119, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
@@ -3478,6 +3513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorMaze4
       objectReference: {fileID: 0}
+    - target: {fileID: 5406649352013993227, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431464af0484db944a8711c648ab1f1f, type: 3}
 --- !u!1001 &1030264989507893078
@@ -3487,6 +3527,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1030264989655412435}
     m_Modifications:
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: _id
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: legend
@@ -3501,6 +3546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: MazeScene
       value: Maze1
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: canOpenDoor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2887757209771091119, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
@@ -4246,18 +4296,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: _id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 4778048273058742302}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: doorName
+      value: Maze3
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: isLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: MazeScene
       value: Maze3
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: canOpenDoor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2887757209771091119, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
@@ -4324,6 +4389,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorMaze3
       objectReference: {fileID: 0}
+    - target: {fileID: 5406649352013993227, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431464af0484db944a8711c648ab1f1f, type: 3}
 --- !u!1001 &1030264990407727363
@@ -4335,18 +4405,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: _id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 4778048273058742302}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: doorName
+      value: Maze2
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: isLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
       propertyPath: MazeScene
       value: Maze2
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
+      propertyPath: canOpenDoor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2887757209771091119, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
@@ -6017,7 +6102,7 @@ PrefabInstance:
     - target: {fileID: 5733597853374228980, guid: 091e9349d7714404abb8a56934348af9,
         type: 3}
       propertyPath: m_Name
-      value: struct_wall_cell_door_main
+      value: LobbyDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 091e9349d7714404abb8a56934348af9, type: 3}

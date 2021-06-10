@@ -493,13 +493,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1268744113911521509, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
+      propertyPath: _id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268744113911521509, guid: 20ef387b960124440b26973d8d472b09,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796377}
     - target: {fileID: 1268744113911521509, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
       propertyPath: doorName
-      value: Maze2_1
+      value: Maze2KeyDoor1
       objectReference: {fileID: 0}
     - target: {fileID: 1313967240825253801, guid: 20ef387b960124440b26973d8d472b09,
         type: 3}
@@ -1017,6 +1022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3895487836505291992, guid: b90b52ba800066f429db0e21fa68445c,
         type: 3}
+      propertyPath: _id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895487836505291992, guid: b90b52ba800066f429db0e21fa68445c,
+        type: 3}
       propertyPath: legend
       value: 
       objectReference: {fileID: 1273796377}
@@ -1418,7 +1428,7 @@ PrefabInstance:
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: doorName
-      value: Maze2_1
+      value: Maze2KeyDoor1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01dde71d73f5ae54fb845039a297f3ec, type: 3}

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class OpenDoor : MonoBehaviour
 {
-
+    public int _id;
     public Component door;
     public Animation openDoorAnimation;
     public Text legend;
@@ -17,18 +17,45 @@ public class OpenDoor : MonoBehaviour
 
     private bool setText = true;
     public bool isLocked = true;
+    public bool canOpenDoor = true;
+    public bool keepOpen = true;
 
-    private bool isClosed = true;
+
+    public bool isClosed = true;
     public bool isKeyDoor = true;
     public string MazeScene = "";
     public string doorName = "";
 
     public GameManager gm;
 
+    public DoorState doorState;
+
+    SceneState sceneState;
 
     private void Start()
     {
         gm = GameManager.GetInstance();
+
+        sceneState = gm.gs.getStateFromCurrentScene();
+        if (sceneState.hasDoorStateById(_id))
+        {
+            doorState = sceneState.getDoorStateById(_id);
+            isClosed = doorState.isClosed;
+            isLocked = doorState.isLocked;
+            if (!isClosed && !isLocked)
+            {
+                UnlockDoor();
+                if (canOpenDoor)
+                {
+                    _OpenDoor();
+                }
+            }
+        }
+        else
+        {
+            doorState = new DoorState(isLocked, isClosed);
+            sceneState.setDoorStateById(_id, doorState);
+        }
     }
 
 
@@ -88,7 +115,8 @@ public class OpenDoor : MonoBehaviour
             }
             setText = false;
         }
-
+        Debug.Log(doorName);
+        Debug.Log(gm.checkCurrentItem(doorName));
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
             UnlockDoor();
@@ -132,11 +160,18 @@ public class OpenDoor : MonoBehaviour
         openDoorAnimation.Play();
         StartCoroutine(OpenDoorRoutine());
         isClosed = false;
+        if (keepOpen)
+        {
+            doorState.isClosed = isClosed;
+            sceneState.setDoorStateById(_id, doorState);
+        }
     }
 
     public void UnlockDoor()
     {
         isLocked = false;
+        doorState.isLocked = isLocked;
         setText = true;
+        sceneState.setDoorStateById(_id, doorState);
     }
 }
