@@ -52,7 +52,9 @@ public class OpenDoor : MonoBehaviour
             if (isLocked)
             {
                 legend.text = isKeyDoor ? "Door is locked, find KEY to open" : "Door is locked, find the PASSWORD to open";
-            } else {
+            }
+            else
+            {
                 legend.text = "Press E to OPEN the DOOR";
             }
             setText = false;
@@ -60,13 +62,13 @@ public class OpenDoor : MonoBehaviour
 
         if (isClosed && !isLocked && Input.GetKey(KeyCode.E))
         {
+            print("FELL HERE");
             UnlockDoor();
-            // gm.removeItemFromInventory();
             _OpenDoor();
 
         }
 
-        if (isClosed && isLocked && Input.GetKey(KeyCode.E) && gm.checkCurrentItem(doorName))
+        else if (isClosed && isLocked && Input.GetKey(KeyCode.E) && gm.checkCurrentItem(doorName))
         {
             IBaseInventoryItem current_item = gm.getSelectedItem();
 
@@ -75,7 +77,7 @@ public class OpenDoor : MonoBehaviour
             _OpenDoor();
         }
 
-        if (isClosed && isLocked && Input.GetKey(KeyCode.E) && !gm.checkCurrentItem(doorName))
+        else if (isClosed && isLocked && Input.GetKey(KeyCode.E) && !gm.checkCurrentItem(doorName))
         {
             GetComponent<AudioSource>().clip = lockedSound;
             GetComponent<AudioSource>().Play();

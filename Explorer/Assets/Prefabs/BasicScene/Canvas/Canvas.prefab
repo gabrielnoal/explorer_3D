@@ -2821,6 +2821,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4778048272506623727}
     m_Modifications:
+    - target: {fileID: 747268589252252778, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3379549904389269986, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402227055095244812, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636103959784626490, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage0
+      objectReference: {fileID: 0}
     - target: {fileID: 5412847852068092132, guid: 46340fea9759bd94fb792f402509bfc0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2931,6 +2951,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 6723189683997964877, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680303421767374846, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228569315306858037, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762330455901628057, guid: 46340fea9759bd94fb792f402509bfc0,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46340fea9759bd94fb792f402509bfc0, type: 3}
 --- !u!224 &5412847851148436969 stripped
@@ -2946,6 +2986,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5412847851148436969}
     m_Modifications:
+    - target: {fileID: 7481237113090766735, guid: cb78b83ff679eb24bbf9f47bf8273f1f,
+        type: 3}
+      propertyPath: m_Name
+      value: ItemImage8
+      objectReference: {fileID: 0}
     - target: {fileID: 7825639905441219332, guid: cb78b83ff679eb24bbf9f47bf8273f1f,
         type: 3}
       propertyPath: m_Name

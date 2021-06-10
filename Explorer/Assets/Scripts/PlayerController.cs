@@ -70,6 +70,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && Time.time > timestamp)
         {
+            print("Items in inventory: " + gm.inventoryItems.Count);
+            print("Current selected item is: " + gm.selectedItem);
+            print("gm.inventoryItem[gm.selectedItem] is: " + gm.inventoryItems[gm.selectedItem]);
             if (gm.inventoryItems.Count > 0 && gm.inventoryItems[gm.selectedItem] != null)
             {
                 if (gm.inventoryItems[gm.selectedItem].name.Contains("Letter"))

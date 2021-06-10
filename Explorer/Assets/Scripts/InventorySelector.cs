@@ -21,6 +21,7 @@ public class InventorySelector : MonoBehaviour
 
         gm = GameManager.GetInstance();
         lastSelectedItem = gm.selectedItem;
+        gm.selectedItem = 0;
 
 
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("InventoryItem"))
@@ -34,7 +35,7 @@ public class InventorySelector : MonoBehaviour
         for (int i = 0; i < gm.inventoryItems.Count; i++)
         {
 
-            GameObject itemImage = GameObject.Find("ItemImage");
+            GameObject itemImage = GameObject.Find("ItemImage" + i);
             if (gm.inventoryItems[i].image)
             {
                 itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
@@ -58,7 +59,7 @@ public class InventorySelector : MonoBehaviour
             {
                 for (int i = 0; i < biggestItemIndex; i++)
                 {
-                    GameObject itemImage = GameObject.Find("ItemImage");
+                    GameObject itemImage = GameObject.Find("ItemImage" + i);
 
                     itemImage.GetComponent<Image>().sprite = null;
                     itemImage.GetComponent<Image>().color = new Color32(38, 38, 38, 255);
@@ -67,14 +68,21 @@ public class InventorySelector : MonoBehaviour
             else
             {
 
-                for (int i = 0; i < gm.inventoryItems.Count; i++)
+                for (int i = 0; i <= 8; i++)
                 {
-
-                    GameObject itemImage = GameObject.Find("ItemImage");
-                    if (gm.inventoryItems[i].image)
+                    GameObject itemImage = GameObject.Find("ItemImage" + i);
+                    if (i < gm.inventoryItems.Count)
                     {
-                        itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
-                        itemImage.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+                        if (gm.inventoryItems[i].image)
+                        {
+                            itemImage.GetComponent<Image>().sprite = gm.inventoryItems[i].image;
+                            itemImage.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+                        }
+                        else
+                        {
+                            itemImage.GetComponent<Image>().sprite = null;
+                            itemImage.GetComponent<Image>().color = new Color32(38, 38, 38, 255);
+                        }
                     }
                     else
                     {

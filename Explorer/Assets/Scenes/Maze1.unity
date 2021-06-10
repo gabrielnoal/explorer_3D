@@ -380,6 +380,11 @@ PrefabInstance:
       objectReference: {fileID: 1273796377}
     - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
         type: 3}
+      propertyPath: doorName
+      value: Maze1EnterDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 402398288631419541, guid: 431464af0484db944a8711c648ab1f1f,
+        type: 3}
       propertyPath: isLocked
       value: 0
       objectReference: {fileID: 0}
