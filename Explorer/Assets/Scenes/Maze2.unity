@@ -1501,6 +1501,11 @@ PrefabInstance:
       propertyPath: _id
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6322583700546615508, guid: 01dde71d73f5ae54fb845039a297f3ec,
+        type: 3}
+      propertyPath: legend
+      value: 
+      objectReference: {fileID: 1273796377}
     - target: {fileID: 8462281455248746654, guid: 01dde71d73f5ae54fb845039a297f3ec,
         type: 3}
       propertyPath: _id
@@ -7267,9 +7272,8 @@ PrefabInstance:
     - target: {fileID: 2900733464639259348, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}
       propertyPath: letterText
-      value: Remember the greek mythology. The minotaur have already been here. The
-        start of the greek empire should help you to get out. Jesus was a good man,
-        but he was not here to save you yet...
+      value: In 1600 B.C. the greek empire was born. The Minotaur Maze was really
+        inspiring...
       objectReference: {fileID: 0}
     - target: {fileID: 4860972760520139993, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}

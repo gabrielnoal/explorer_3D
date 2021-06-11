@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CursosEnable : MonoBehaviour
+public class CursorEnabler : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -10,4 +10,5 @@ public class CursosEnable : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
+
 }
