@@ -1160,6 +1160,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 90612144}
     - target: {fileID: 1771338414, guid: b90b52ba800066f429db0e21fa68445c, type: 3}
+      propertyPath: curPassword
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771338414, guid: b90b52ba800066f429db0e21fa68445c, type: 3}
       propertyPath: displayText
       value: 
       objectReference: {fileID: 2076873879}
@@ -7263,7 +7267,9 @@ PrefabInstance:
     - target: {fileID: 2900733464639259348, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}
       propertyPath: letterText
-      value: 1234
+      value: Remember the greek mythology. The minotaur have already been here. The
+        start of the greek empire should help you to get out. Jesus was a good man,
+        but he was not here to save you yet...
       objectReference: {fileID: 0}
     - target: {fileID: 4860972760520139993, guid: f6cae735bf49f6840aaece40590029b5,
         type: 3}
