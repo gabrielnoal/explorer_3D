@@ -11,6 +11,9 @@
   
 Access [Brackeys Youtube Channel](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) for more.
 
+## Script
+- [Maze Generator](ttps://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
+
 
 ## Models:
 
@@ -18,6 +21,8 @@ Access [Brackeys Youtube Channel](https://www.youtube.com/channel/UCYbK_tjZ2OrIZ
 - [Key](https://www.turbosquid.com/3d-models/old-key-3ds/448201)
 - [Chest](https://www.turbosquid.com/3d-models/chest-3d-model-1290627)
 - [Doors](https://opengameart.org/content/modular-dungeon-2-3d-models)
+- [Keypad](https://assetstore.unity.com/packages/2d/gui/keypad-62942)
+
 
 ## Audios:  
 
